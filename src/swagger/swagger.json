@@ -1,0 +1,51 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "description":"This API can recognize all sorts of food and dishes!!!",
+        "version": "1.0.0",
+        "title": "API nevera",
+        "contact": {
+            "email": "AAAA@gft.com"
+        },
+        "license": {
+            "name": "MIT",
+            "url":"https://opensource.org/licenses/MIT"
+        }
+    },
+    "tags": [
+        {
+            "name": "Image request",
+            "description": "Get the prediction of the image"
+        }
+    ],
+    "paths":{
+        "/funciono": {
+            "post": {
+                "tags": [
+                    "Image request"
+                ],
+                "summary": "returns image prediction",
+                "responses": {
+                    "200" : {
+                        "description" : "OK",
+                        "schema" : {
+                            "$ref": "#/components/schemas/id"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components" : {
+        "schemas": {
+            "id": {
+                "type": "string",
+                "properties": {
+                    "prediction": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
