@@ -1,0 +1,38 @@
+<annotation>
+	<folder>tomate</folder>
+	<filename>picture20211115104937.jpg</filename>
+	<path>C:\Users\JIOY\OneDrive - GFT Technologies SE\Desktop\nevera\nevera\src\train_images\val\tomate\picture20211115104937.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>tomate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>98</xmin>
+			<ymin>3</ymin>
+			<xmax>366</xmax>
+			<ymax>365</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>tomate</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>399</xmin>
+			<ymin>5</ymin>
+			<xmax>557</xmax>
+			<ymax>358</ymax>
+		</bndbox>
+	</object>
+</annotation>
