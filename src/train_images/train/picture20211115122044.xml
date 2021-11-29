@@ -1,0 +1,26 @@
+<annotation>
+	<folder>schweppes</folder>
+	<filename>picture20211115122044.jpg</filename>
+	<path>C:\Users\docm\api_nevera\fotos_productos\schweppes\picture20211115122044.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>schweppes</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>252</xmin>
+			<ymin>14</ymin>
+			<xmax>443</xmax>
+			<ymax>473</ymax>
+		</bndbox>
+	</object>
+</annotation>
