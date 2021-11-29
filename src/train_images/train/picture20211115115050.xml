@@ -1,0 +1,38 @@
+<annotation>
+	<folder>actimel</folder>
+	<filename>picture20211115115050.jpg</filename>
+	<path>C:\Users\matm\OneDrive - GFT Technologies SE\Desktop\fotos productos\actimel\picture20211115115050.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>actimel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>80</xmin>
+			<ymin>11</ymin>
+			<xmax>248</xmax>
+			<ymax>338</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>actimel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>262</xmin>
+			<ymin>16</ymin>
+			<xmax>558</xmax>
+			<ymax>339</ymax>
+		</bndbox>
+	</object>
+</annotation>
