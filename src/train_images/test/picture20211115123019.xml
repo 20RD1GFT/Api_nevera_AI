@@ -1,0 +1,50 @@
+<annotation>
+	<folder>coca cola</folder>
+	<filename>picture20211115123019.jpg</filename>
+	<path>C:\Users\docm\api_nevera\fotos_productos\val\coca cola\picture20211115123019.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>coca cola</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>196</xmin>
+			<ymin>134</ymin>
+			<xmax>344</xmax>
+			<ymax>435</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>coca cola</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>341</xmin>
+			<ymin>116</ymin>
+			<xmax>531</xmax>
+			<ymax>438</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>coca cola</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>512</xmin>
+			<ymin>132</ymin>
+			<xmax>559</xmax>
+			<ymax>431</ymax>
+		</bndbox>
+	</object>
+</annotation>
