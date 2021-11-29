@@ -1,0 +1,38 @@
+<annotation>
+	<folder>val</folder>
+	<filename>picture20211115104555.jpg</filename>
+	<path>C:\Users\matm\OneDrive - GFT Technologies SE\Desktop\fotos productos\alpro\val\picture20211115104555.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>alpro</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>80</xmin>
+			<ymin>92</ymin>
+			<xmax>205</xmax>
+			<ymax>419</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>alpro</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>157</xmin>
+			<ymin>15</ymin>
+			<xmax>434</xmax>
+			<ymax>440</ymax>
+		</bndbox>
+	</object>
+</annotation>
