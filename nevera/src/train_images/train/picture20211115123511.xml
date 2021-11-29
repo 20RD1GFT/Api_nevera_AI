@@ -1,0 +1,38 @@
+<annotation>
+	<folder>coca cola</folder>
+	<filename>picture20211115123511.jpg</filename>
+	<path>C:\Users\docm\api_nevera\fotos_productos\train\coca cola\picture20211115123511.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>coca cola</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>141</xmin>
+			<ymin>31</ymin>
+			<xmax>323</xmax>
+			<ymax>378</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>coca cola</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>328</xmin>
+			<ymin>3</ymin>
+			<xmax>559</xmax>
+			<ymax>390</ymax>
+		</bndbox>
+	</object>
+</annotation>
