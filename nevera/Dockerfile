@@ -22,7 +22,7 @@ COPY /src .
 RUN mkdir imagenes
 
 # run from working directory, and separate args in the json syntax
-CMD ["python", "./server.py"]
+CMD ["python", "./main.py"]
 
 #we open the ports
 EXPOSE 5000/tcp
