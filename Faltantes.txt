@@ -1,0 +1,8 @@
+----->Detección
+Entrene
+Validación
+Predicción
+----->Clasificación
+Entrene
+Validación
+Predicción
