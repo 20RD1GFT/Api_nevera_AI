@@ -1,0 +1,28 @@
+item { 
+	name:'actimel'
+	id:1
+}
+item { 
+	name:'alpro'
+	id:2
+}
+item { 
+	name:'coca cola'
+	id:3
+}
+item { 
+	name:'florette'
+	id:4
+}
+item { 
+	name:'leche'
+	id:5
+}
+item { 
+	name:'schweppes'
+	id:6
+}
+item { 
+	name:'tomate'
+	id:7
+}
