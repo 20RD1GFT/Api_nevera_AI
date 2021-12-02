@@ -1,5 +1,6 @@
 import pandas as pd
 from flask import Flask, jsonify, request
+from werkzeug.utils import cached_property
 from flask_restplus import Api, Resource
 import base64
 from datetime import datetime
@@ -37,9 +38,10 @@ api = Api(app = flask_app)
 
 
 #Load models
+'''
 from keras.models import load_model
-model = load_model('./models/clasificador_nevera.h5')
-
+model = load_model('./models/clasificador_nevera1638357101.h5')
+'''
 
  # Assigning label names to the corresponding indexes
 class_dict = ['Actimel','Alpro','coca-cola','Florette','Leche','Schweppes','Tomate']
@@ -59,16 +61,17 @@ class prediction_test(Resource):
             file_to_save.write(decoded_image_data)
         # procesado total-----
         img= PIL.Image.open('imagenes/prueba.jpg')
-
+        '''
         img = img.resize((224, 224))
         data = expand_dims(image.img_to_array(img), 0)
         data = preprocess_vgg16(data)
         preds = model.predict(data)
         pred = np.argmax(preds)
         pred = class_dict[pred]
+        '''
     
     
-        return jsonify({"about": "Prueba guardada e imagen predicha, jaja que bien, la verdad. Vaya alivio. Estoy a punto de llorar","predicción":pred})
+        return jsonify({"about": "Prueba guardada e imagen predicha, jaja que bien, la verdad. Vaya alivio. Estoy a punto de llorar"})
 
 
 #{'carpeta':'Train','producto':'Actimel','imagen':'jksfb'}
