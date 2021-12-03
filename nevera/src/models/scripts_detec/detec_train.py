@@ -2,11 +2,11 @@ import os
 
 # declaring paths
 api_path = 'Tensorflow/models'
-model_path ='Api_nevera_AI/nevera/scripts_detec/annotations/ssd_nevera_v3'
+model_path ='Api_nevera_AI/nevera/src/models/scripts_detec/ssd_nevera_v3'
 pipeline_file = f'{model_path}/pipeline.config'
 
-annotations_path = 'Api_nevera_AI/nevera/scripts_detec/annotations'
-record_script = 'Api_nevera_AI/nevera/scripts_detec/generate_tfrecord.py'
+annotations_path = 'Api_nevera_AI/nevera/src/models/scripts_detec/annotations'
+record_script = 'Api_nevera_AI/nevera/src/models/scripts_detec/generate_tfrecord.py'
 IMAGE_PATH = 'Api_nevera_AI/nevera/src/train_images'
 
 # generate tfrecords
