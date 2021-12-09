@@ -53,8 +53,7 @@ def deteccion(labelmapPath, IMAGE_PATH, detection_model, thresh):
 
     # detection_classes should be ints.
     detections['detection_classes'] = detections['detection_classes'].astype(np.int64)
-    return detections
-
+    
 
     for index, value in enumerate(detections['detection_classes']):
             score = detections['detection_scores'][index]
