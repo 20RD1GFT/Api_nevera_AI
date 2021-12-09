@@ -16,6 +16,9 @@ IMAGE_PATH = 'picture20211112143805.jpg'
 
 pipeline_file = f'{ckpPath}\pipeline.config'
 
+clases_detectadas = []
+clases_scores = []
+
 # Load pipeline config and build a detection model
 configs = config_util.get_configs_from_pipeline_file(pipeline_file)
 detection_model = model_builder.build(model_config=configs['model'], is_training=False)
@@ -31,7 +34,7 @@ def detect_fn(image, detection_model):
     detections = detection_model.postprocess(prediction_dict, shapes)
     return detections
 
-def deteccion(labelmapPath, IMAGE_PATH, detection_model):
+def deteccion(labelmapPath, IMAGE_PATH, detection_model, thresh):
 
     category_index = label_map_util.create_category_index_from_labelmap(f'{labelmapPath}\label_map.pbtxt')    
 
@@ -53,7 +56,15 @@ def deteccion(labelmapPath, IMAGE_PATH, detection_model):
     return detections
 
 
-    '''
+    for index, value in enumerate(detections['detection_classes']):
+            score = detections['detection_scores'][index]
+            if(score > thresh):
+                clase = category_index.get(value+1).get('name')
+                clases_detectadas.append(clase)
+                clases_scores.append(score)
+            
+                print(f"Object detected {clase}, with a detection score of {score}" )
+            
     label_id_offset = 1
     image_np_with_detections = image_np.copy()
 
@@ -65,13 +76,15 @@ def deteccion(labelmapPath, IMAGE_PATH, detection_model):
                 category_index,
                 use_normalized_coordinates=True,
                 max_boxes_to_draw=5,
-                min_score_thresh=.75,
+                min_score_thresh=thresh,
                 agnostic_mode=False)
 
     plt.imshow(cv2.cvtColor(image_np_with_detections, cv2.COLOR_BGR2RGB))
     plt.show()
-    '''
+
+    return clases_detectadas, clases_scores
+  
 
 t = time.time()
-pepito = deteccion(labelmapPath, IMAGE_PATH, detection_model)  
+test_image = deteccion(labelmapPath, IMAGE_PATH, detection_model)  
 print(np.round_(time.time() - t, 3), 'sec elapsed')
